@@ -2,26 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+  /* Section Styles */
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.section-title {
+  margin-bottom: 40px;
 }
+
+.section-title .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333; /* Change the color if needed */
+}
+
+.section-title .h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333; /* Change the color if needed */
+}
+
+.section-title .des {
+  text-align: justify;
+  color: #555; /* Change the color if needed */
+}
+
+/* Card Styles */
+.card-pf {
+  width: 270px;
+  height: 300px;
+  background-color: #030303;
+  border: 1px solid #f30606;
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-pf:hover {
+  background-color: #ff0000; /* Red background on hover */
+  color: #fff; /* White text on hover */
+}
+
+.card-pf img {
+  width: 270px;
+  height: 240px;
+  display: block;
+}
+
+.card-pf .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-pf .card-body p {
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-pf .card-body span {
+  display: block;
+  text-transform: uppercase;
+}
+
+
+

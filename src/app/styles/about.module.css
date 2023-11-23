@@ -1,0 +1,40 @@
+/* Tailwind CSS */
+
+@keyframes lineExpand {
+  to {
+    width: 100%;
+  }
+}
+
+.lineanimation {
+  position: absolute;
+  
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: blue;
+  transition: width 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.lineanimation:hover {
+  animation: lineExpand 0.3s ease-in-out; /* Use the keyframe animation on hover */
+}
+
+.lineanimation::before,
+.lineanimation::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: red; /* Change the color for left-to-right line */
+  transition: width 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.lineanimation:hover::before {
+  animation: lineExpand 0.3s ease-in-out; /* Use the keyframe animation on hover */
+}
+
+.lineanimation:hover::after {
+  animation: lineExpand 0.3s ease-in-out; /* Use the keyframe animation on hover */
+}
