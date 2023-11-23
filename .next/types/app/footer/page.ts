@@ -1,4 +1,4 @@
-// File: D:\Projects-2023\react-working\next-galaxy-website-deployee\src\app\footer\page.js
+// File: D:\Projects-2023\react-working\galaxy-website-next-deployee\src\app\footer\page.js
 import * as entry from '../../../../src/app/footer/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
